@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Field Cap</title>
+  <link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" />
+  <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="e" data-role="header" data-position="fixed">
+        <a data-role="button" href="forms-delete.html" data-icon="minus" data-iconpos="left" 
+        class="ui-btn-right">
+            Delete
+        </a>
+        <a data-role="button" data-direction="reverse" data-rel="back" data-transition="slide"
+        href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+            Back
+        </a>
+        <h3>
+            Quote Sheet
+        </h3>
+    </div>
+    <div data-role="content">
+        
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Captures
+                </h3>      
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="d">
+                        <a href="forms-quote-entry.html" data-transition="slide">
+                            Joe Shmo (80% - 15/11/2013)
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="forms-quote-entry.html" data-transition="slide">
+                            Big Corp (100% - 11/11/2013)
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="forms-quote-entry.html" data-transition="slide">
+                            Uber Corp (80% - 01/11/2013)
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="forms-quote-entry.html" data-transition="slide">
+                            Dr Who (80% - 01/11/2013)
+                        </a>
+                    </li>
+                    <li data-theme="d">
+                        <a href="forms-quote-entry.html" data-transition="slide">
+                            Big Mama Corp (80% - 01/11/2013)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Overview
+                </h3>
+                <p>The Quote Sheet is used for blah blah blah.</p>
+        
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="d">
+                        <span class="ui-icon ui-icon-check ui-icon-shadow" style="width:18px;height:18px;display:inline-block;">&nbsp;</span>
+                            Geolocation enabled
+                    </li>
+                    <li data-theme="d">
+                        <span class="ui-icon ui-icon-check ui-icon-shadow" style="width:18px;height:18px;display:inline-block;">&nbsp;</span>
+                            Append photos
+                    </li>
+                    <li data-theme="d">
+                        <span class="ui-icon ui-icon-check ui-icon-shadow" style="width:18px;height:18px;display:inline-block;">&nbsp;</span>
+                            Password protected
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

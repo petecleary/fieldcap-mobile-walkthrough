@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Field Cap</title>
-  <link rel="stylesheet" href="jquery.mobile-1.3.1.min.css">
+  <link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" />
   <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.mobile-1.3.1.min.js"></script>   
@@ -15,8 +15,8 @@
     <!-- Home -->
 <div data-role="page" id="page1">
     <div data-theme="e" data-role="header" data-position="fixed">
-        <a data-role="button" href="login.html" rel="external" data-ajax="false" data-icon="arrow-l" data-iconpos="left"
-        class="ui-btn-left">
+        <a data-role="button" data-direction="reverse" data-rel="back" data-transition="slide"
+        href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
             Back
         </a>
         <h3>
@@ -36,13 +36,22 @@
                 <input name="password" id="textinput2" placeholder="password" value=""
                 type="password">
             </div>
-            <a data-role="button" href="#page1" data-icon="plus" data-iconpos="left">
+            
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <input id="terms" name="terms" type="checkbox">
+                    <label for="terms">
+                        Accept terms &amp; conditions
+                    </label>
+                </fieldset>
+            </div>
+            <a data-role="button" href="signup-complete.html" data-rel="dialog" data-transition="slidedown" data-icon="check" data-iconpos="left">
                 Sign up
             </a>
             <div>
-                <a href="" data-transition="none">
-                    Terms and conditions
-                </a>
+            <a  href="signup-terms.html" data-rel="dialog" data-transition="slidedown">
+                Read terms &amp; conditions
+            </a>
             </div>
         </form>
     </div>

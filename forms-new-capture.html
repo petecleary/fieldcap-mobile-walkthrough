@@ -15,23 +15,28 @@
 <!-- Home -->
 <div data-role="page" id="page1">
     <div data-theme="e" data-role="header" data-position="fixed">
-            <img style="width: 38px; height: 33px;" src="icon.png" class="ui-btn-left">
+        <a data-role="button" data-direction="reverse" data-rel="back" data-transition="slide"
+        href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+            Back
+        </a>
         <h3>
-            Field Cap
+            New Capture
         </h3>
     </div>
     <div data-role="content">
-            <div>
-                <p>Welcome to the Field Cap mobile walkthrough.</p>
-                <p>The walkthrough was built using PhoneGap, jQuery Mobile and Alpaca (for the form generation)</p> 
-                <a data-role="button" href="login.html" rel="external" data-ajax="false" data-transition="fade">
-                    Login
-                </a>               
-                <p>Once logged in users will go directly to the Home screen on app opening.</p>
-                <a  data-role="button" href="home.html" rel="external" data-ajax="false" data-transition="fade">
-                    Home
+        <h3>Pick a form</h3>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="d">
+                <a href="forms-quote-entry.html" data-transition="slide">
+                    Quote Sheet
                 </a>
-            </div>
+            </li>
+            <li data-theme="d">
+                <a href="forms-quote-entry.html" data-transition="slide">
+                    Job Sheet
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 </body>
